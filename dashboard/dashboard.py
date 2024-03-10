@@ -19,7 +19,7 @@ aoti, chang, guan, geo = st.tabs(["Aotizhongxin", "Changping", "Guanyuan", "Geoa
 
 with aoti:
     # Membaca data
-    aotizhongxin_df = pd.read_csv("../data/aotizhongxin.csv")
+    aotizhongxin_df = pd.read_csv("../data/PRSA_Data_Aotizhongxin_20130301-20170228.csv")
     # Membersihkan data
     aotizhongxin_df.fillna(aotizhongxin_df.mean(numeric_only=True), inplace=True)
     aotizhongxin_df.fillna(value="NE", inplace=True)
@@ -97,7 +97,7 @@ with aoti:
 
 with chang:
     # Membaca data
-    changping_df = pd.read_csv("../data/changping.csv")
+    changping_df = pd.read_csv("../data/PRSA_Data_Changping_20130301-20170228.csv")
     # Membersihkan data
     changping_df.fillna(changping_df.mean(numeric_only=True), inplace=True)
     changping_df.fillna(value="NE", inplace=True)
@@ -175,7 +175,7 @@ with chang:
 
 with guan:
     # Membaca data
-    guanyuan_df = pd.read_csv("../data/guanyuan.csv")
+    guanyuan_df = pd.read_csv("../data/PRSA_Data_Guanyuan_20130301-20170228.csv")
     # Membersihkan data
     guanyuan_df.fillna(guanyuan_df.mean(numeric_only=True), inplace=True)
     guanyuan_df.fillna(value="NE", inplace=True)
